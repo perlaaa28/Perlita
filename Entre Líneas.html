@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Entre Líneas</title>
+	<style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400&display=swap');
+/*el tipo de letra*/
+
+
+
+/*header*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html{
+	scroll-behavior: smooth; /*pa que suba lindo*/
+}
+
+header{
+	width: 100%;
+	height: 110px;
+	font-family: 'Roboto Slab', serif;
+	position: fixed; /* para que siempre aparezca en la misma posición.*/
+	top: 0;
+	right: 0;
+	z-index: 100; /*para que se quede encima el cosa*/
+	background-color: #f6dbec;
+}
+
+.container_header{ 
+	max-width: 1200px;
+	height: 100%;
+	display: flex;	/*pa ponerlo en fila*/
+	background: #f6dbec;
+	justify-content: space-between; 
+	margin: auto;
+	padding: 0px 20px;
+}
+
+header .logo{
+	height: 100%;
+}
+
+.logo img{
+	width: 250px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container_nav{
+	position: relative;
+	height: 100%;
+}
+
+nav{
+	height: 100%;
+}
+
+nav ul{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul li{
+	margin: 0px 20px;
+	list-style: none;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 14px;
+}
+
+/*para que q salga de otro color*/
+.select{
+	background: #eca2d0;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 20px;
+}
+
+.select1{
+	background: #eca2d0;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 20px;
+}
+
+.select3{
+	background: #eca2d0;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 20px;
+}
+
+.select4{
+	background: #eca2d0;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 20px;
+}
+
+.select5{
+	background: #eca2d0;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 20px;
+}
+/*Portada aja*/
+
+.cover{
+	width: 100%;
+	padding-bottom: 60px; /*establece el espacio de relleno requerido en la parte inferior del elemento.*/
+	font-family: 'Roboto Slab', serif;
+	margin-top: 100px;
+}
+
+.container_cover{
+	max-width: 1200px;
+	margin: auto;
+	margin: auto;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.cover .container_info{
+	max-width: 400px;
+	margin-top: 40px;
+	z-index: 2;
+}
+
+.cover h1{ /*The purple*/
+	max-width: 400px;
+	font-size: 60px;
+	font-weight: 900;
+	color: black;
+	font-family: 'Roboto Slab', serif;
+}
+
+.cover h2{ /*books*/
+	font-size: 60px;
+	font-weight: 900;
+	color: #eca2d0;
+	margin-top: -30px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.cover p{ /*la info*/
+	margin-top: 10px;
+	color: black;
+	width: 600px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.container_vector{
+	position: relative;
+}
+
+.container_vector img{ 
+	position: absolute;
+	bottom: 10px;
+	right: 0px;
+    width: 450px;
+    animation: move_vector 2s ease-in-out infinite; /*transicion*/
+}
+
+/*transicion de imagen*/
+@keyframes move_vector {
+	0%{
+		transform: translateY(10px);
+	}
+	25%{
+		transform: translateY(-10px);
+	}
+	100%{
+		transform: translateY(10px);
+	}
+}
+
+/*FOOTER*/
+footer{
+	width: 100%;
+	height: 300px;
+	padding: 30px 0px;
+	background-color: #f6dbec;
+	margin-top: 60px;
+}
+
+.container_footer{
+	display: flex;
+	flex-wrap: wrap; /*permite controlar la dirección en la cual serán apilados los elementos.*/
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 0px;
+}
+
+.box_footer{
+	display: flex;
+	flex-direction: column; /*ponerlas en columnas*/
+	padding: 40px;
+}
+
+.box_footer .logo img{
+	width: 100px;
+	border-radius: 1em;
+	padding: 2px;
+
+}
+
+.box_footer .Terminos{
+	max-width: 350px;
+	margin-top: 0px;
+	font-weight: 500;
+	font-family: 'Roboto Slab', serif;
+    font-size: 15px
+    color: #5A5A5A;
+}
+
+.box_footer h2{
+	margin-bottom: 00px;
+	font-weight: 700 ;
+	font-size: 13;
+	font-family: 'Roboto Slab', serif;
+}
+
+.box_footer a{
+	margin-top: 10px;
+	color: black;
+	font-weight:600 ;
+	font-family: 'Roboto Slab', serif;
+
+}
+
+.box_footer a:hover{
+opacity: 0.8 ;
+}
+
+.box_footer a .fab{
+	font-size: 10px
+}
+
+.box_copyright{
+	max-width:1200px;
+	margin: auto;
+	text-align: center;
+	padding: 0px 30px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.box_copyright p{
+	margin-top: 20px;
+    color: #5A5A5A;
+	font-size: 12px
+	font-family: 'Roboto Slab', serif;
+}
+
+/*la rayita*/
+.box_copyright hr{
+	border: none; 
+	height: 1px;
+	background-color:#5A5A5A;
+	font-family: 'Roboto Slab', serif;
+}
+
+/*caja del botoncito de "Comenzar"*/
+.caja1{
+	height: 40px;
+	width:100px;
+	background-color:#eca2d0;
+	border-radius: 20px;
+	padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    color: white	;
+    font-weight: 900; /*grueso de la letra*/
+    margin-top: 10px;
+
+}
+
+.caja2{
+	height: 320px;
+	width: 230px;
+	background-color:#DD93FF;
+	border-radius: 20px;
+	padding: 13px;
+	margin: 20px;
+}
+
+.container .card{
+	width: 200px;
+	height: 360px;
+	border-radius: 8px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden; 
+	margin: 30px;
+	text-align: center;
+	transition: all 0.25s;
+	display: inline-block;
+	border: 10px;
+	margin-top: 16px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.container .card:hover{
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+	margin-top: 80px;
+
+}
+
+.container .card img{
+	width: 200px;
+	height: 330px;
+
+}
+
+.container .card img{
+	width: 220px;
+	height: 250px;
+}
+
+.container_h2{
+font-weight: 900;
+font-family: 'Roboto Slab', serif;
+font-size: 20px;
+}
+
+/*haciendo la pagina responsive*/
+/*FAIL*/
+
+@media screen and (max-width: 1100px){
+	.container_vector img{
+		max-width: 450px;
+		padding: 3px;
+		height: 10%;
+		width: 10%;
+		margin-left: 20px;
+	}
+
+	.cover .container_info{
+		max-width: 500px;
+		padding: 5px;
+		height: 100%;
+		width: 100px;
+		margin-right: 20px;
+	}
+
+    .container_cover{
+    	max-width: 500px;
+    	padding: 5px;
+    	height: 600px;
+    	width: 50%;
+	}
+
+
+
+}
+
+
+
+</style>
+	
+
+</head>
+<body bgcolor="white">
+
+	<header>
+		<div class="container_header">
+<div class="logo">
+	<img src="img/looo.png" alt="200px">
+</div>
+<div class="container_nav">
+	<nav>
+		<ul>
+			<li><a href="Entre Líneas.html" class="select">Inicio</a></li>
+            <li><a href="books.html" class="select1">Libros</a></li>
+            <li><a href="contactos.html" class="select3">Contactos</a></li>
+            <li><a href="Sobre nosotros.html" class="select5">Sobre nosotros</a></li>
+            <li><a href="Terminos y condiciones.html" class="select4">Terminos y Condiciones</a></li>
+
+		</ul>
+	</nav>
+</div>
+        </div>
+	</header>
+
+
+<div class="container_all">
+
+    <div class="cover">
+    	<div class="container_cover">
+
+	         <div class="container_info">
+		<h1>Entre Líneas</h1>
+		<h2>& Asoc.</h2>
+		<p>Es una librería virtual dedicada a la venta de libros digitales y físicos, así como a la creación de un espacio dinámico para eventos culturales en línea. Nos especializamos en ofrecer una amplia variedad de títulos, desde literatura clásica y contemporánea hasta libros de desarrollo personal, ciencia, arte y más, asegurando que nuestros lectores encuentren siempre algo que les inspire. Nuestro objetivo es fomentar la lectura y el acceso a la cultura en el entorno digital, proporcionando una plataforma accesible, interactiva y amigable que conecte a los amantes de los libros con historias, conocimientos y experiencias enriquecedoras.</p>
+
+
+        <p>Nuestros artículos están muy ciudados y seleccionados, relacionados con el mundo del aprendizaje y la ficcion, tenemos cuentos maravillosos que hacen las delicias de pequeños y grandes, libros de lectura para todas las edades, últimas novedades de los escritores más vendidos, ayudan a los adolescentes a aprender del amor,  ficción moderna juvenil, literatura, ingles, religión y negocios.</p>
+
+
+		<div class="caja1">
+		<a href="books.html">Comenzar</a>
+	</div>
+	</div>
+	    <div class="container_vector">
+		<img src="img/logo.jpg">
+
+	         </div>
+
+        </div>
+   </div>
+
+</div>
+
+<div class="container_h2">
+<center><h2>Libros populares:</h2></center>
+</div>
+
+<div class="container">	
+
+     <div class="card">
+	        <img src="img/mdd.jpg" style="position: relative; width: 200px; height: 300px;">
+         <h3>RD$ 1,365.00</h3>
+         <p>Mi desesperada desición</p>
+     </div>
+
+      <div class="card">
+      	<img src="img/lascivia.jpg" style="position: relative; width: 200px; height: 300px;">
+      	<h3>RD$ 2,000.00</h3>
+      	<p>Lascivia</p>
+      </div>
+
+      <div class="card">
+      	<img src="img/hielo.jpg" style="position: relative; width: 200px; height: 300px;" >
+      	<h3>RD$ 1,650.00</h3>
+      	<p>Corazón de hielo</p>
+      </div>
+      
+      <div class="card">
+      	<img src="img/tc.jpg" style="position: relative; width: 200px; height: 300px;">
+      	<h3>RD$ 1,800.00</h3>
+      	<p>True Colors</p>
+
+      </div>
+
+      <div class="card">
+      	<img src="img/atdmv.jpg" style="position: relative; width: 200px; height: 300px;">
+      	<h3>RD$ 1,600.00</h3>
+      	<p>A traves de mi ventana</p>
+
+      </div>
+
+      <div class="card">
+      	<img src="img/luke.jpg" style="position: relative; width: 200px; height: 300px;">
+      	<h3>RD$ 1,400.00</h3>
+      	<p>Boulevard</p>
+
+      </div>
+
+      <div class="card">
+      	<img src="img/sp.jpg" style="position: relative; width: 200px; height: 300px;">
+      	<h3>RD$ 1,300.00</h3>
+      	<p>Suicidal Poker</p>
+
+      </div>
+
+      <div class="card">
+      	<img src="img/aegan.jpg" style="position: relative; width: 200px; height: 300px;">
+      	<h3>RD$ 1,500.00</h3>
+      	<p>Perfectos Mentirosos</p>
+
+      </div>
+
+      <div class="card">
+      	<img src="img/smv.jpg" style="position: relative; width: 200px; height: 300px;">
+      	<h3>RD$ 1,800.00</h3>
+      	<p>Sigue Mi Voz</p>
+
+      </div>
+
+      <div class="card">
+      	<img src="img/plqq.jpg" style="position: relative; width: 200px; height: 300px;">
+      	<h3>RD$ 1,900.00</h3>
+      	<p>Pideme Lo Que Quieras</p>
+
+      </div>
+
+
+</div>
+
+<footer>
+	
+	<div class="container_footer">
+		<div class="box_footer">
+			<div class="logo">
+				<a href="#"> <img src="img/looo.png" alt=""></a>
+			</div>
+			      <div class="Terminos">
+			      	<p>Nuestro objetivo es enamorar a los jovenes y a los no jovenes con la lectura, somos una libreria de muy buena calidad con una gran variacion de libros.</p>
+			      </div>
+		</div>
+		
+
+		<div class="box_footer">
+			<h2>Redes Sociales</h2>
+			<a href="https://www.instagram.com/pminaya.28/"><i class="fa-brands fa-instagram"></i>Instagram</a>
+			<a href="https://es-la.facebook.com/Libreriadominicana/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+			<a href="https://twitter.com/librosdominican"><i class="fa-brands fa-twitter"></i>Twitter</a>
+		</div>
+
+	</div>
+
+<div class="box_copyright">
+	<hr>
+	<p> Todos los derechos reservados © <strong>Perla Minaya</strong></p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
